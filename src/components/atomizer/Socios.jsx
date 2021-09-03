@@ -10,20 +10,23 @@ const Socios = () => {
   return (  
     <StyledSocios>
       <h2>¿Te interesa comercializar nuestros equipos?</h2>
+      <p className="negrita">Buscamos formar un grupo en donde la profesionalidad y la calidad humana resalte a la par que el nivel de nuestros equipos.</p>
       <p>Ponete en contacto con nosotros, comentanos tu zona, tus experiencias y escucharemos tus propuestas.</p>
-      <p className="negrita">Buscamos formar un grupo en donde la profesionalidad y la calidad humana resalte a la par que el nivel de nuestros equipos. </p>
-      <StyBtn borde={colorAtomizer}>CONTACTANOS</StyBtn>
+      <StyBoton borde={colorAtomizer}>CONTACTANOS</StyBoton>
     </StyledSocios>
   );
 }
 
 // ESTILOS
 const StyledSocios = styled.div` 
+  position: relative;
   background-color: white;
   border-top: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
   text-align: center;
   padding: 3rem 0;
+  height: 20rem;
+  width: 100%;
 
   p {
     line-height: 1.5rem;
@@ -34,10 +37,16 @@ const StyledSocios = styled.div`
     width: 90%;
   }
 
-  button {
-    margin-top: 3rem;
-    margin-bottom: 0.3rem;
+  a {
+    margin-top: 50rem;
   }
+`
+
+const StyBoton = styled(StyBtn)`
+  position: absolute;
+  left: 50%;
+  bottom: 2rem;
+  transform: translateX(-50%);
 `
  
 export default Socios

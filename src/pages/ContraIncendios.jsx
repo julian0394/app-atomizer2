@@ -5,7 +5,7 @@ import Portada from '../components/Portada';
 // Imagenes
 import imgPortadaFuego from '../img/portadas/portadaFuego.jpg';
 // Estilo
-import styled from 'styled-components';
+// import styled from 'styled-components';
 
 const ContraIncendios = () => {
 

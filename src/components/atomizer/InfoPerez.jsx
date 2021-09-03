@@ -28,7 +28,6 @@ const StyledInfoPerez = styled.div`
     width: 12rem;
     object-fit: cover;
     border-radius: 50%;
-    /* align-self: center; */
     padding: 0;
     margin: 0;
   }
@@ -37,10 +36,7 @@ const StyledInfoPerez = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* width: 50%;
-    margin: 0 auto; */
     margin-top: 2rem;
-    /* text-align: center; */
     
     h2 {
       color: #239DDB;

@@ -10,13 +10,15 @@ const EstiloGlobal = createGlobalStyle`
     font-family: 'Roboto', sans-serif;
   }
 
-  body {
-    
-  }
 
-  .visible {
+
+  /* .visible {
     z-index: 2;
     opacity: 1;
+  } */
+
+  .negrita {
+    font-weight: bold;
   }
 ` 
 

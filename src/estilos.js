@@ -7,7 +7,6 @@ export const StyBtn = styled.a`
   border-radius: 15px;
   cursor: pointer;
   transition: 0.5s ease;
-  margin: 0 15px;
   color: white;
   text-transform: uppercase;
   font-weight: bold;

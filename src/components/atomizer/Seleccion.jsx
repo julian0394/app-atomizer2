@@ -24,7 +24,7 @@ const Seleccion = () => {
         <img src={imgOpcionFuego} alt="imagen extincion" />
         <div className="img-overlay overlay-blur">
           <h2>Equipos para extinción</h2>
-          <p className="texto texto-izq">Portable, ecológico y económico. Perfecto para un pronto ataque y comenzar a enfriar rapidamente mientras se despliegan las lineas de mayor caudal. El complemento ideal para autobombas o para pequeñas unidades de agil desplazamiento.</p>
+          <p className="texto texto-izq">Económico, portable y ecológico. Perfecto para un pronto ataque y comenzar a enfriar rapidamente mientras se despliegan las lineas de mayor caudal. El complemento ideal para autobombas o para pequeñas unidades de agil desplazamiento.</p>
           <StyBtn onClick={ () => manejoRuta('/Contra-Incendios') } borde={colorFuego}> Visitar </StyBtn>
         </div>
       </div>
@@ -97,7 +97,6 @@ const StyCajaSeleccion = styled.div`
         margin: 0 15rem;
         line-height: 1.5rem;
       }
-      
     }
 
     .overlay-blur:hover {
