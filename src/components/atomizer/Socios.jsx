@@ -20,7 +20,7 @@ const Socios = () => {
 // ESTILOS
 const StyledSocios = styled.div` 
   position: relative;
-  background-color: white;
+  background-color: #EEF0F2;
   border-top: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
   text-align: center;
@@ -28,14 +28,19 @@ const StyledSocios = styled.div`
   height: 20rem;
   width: 100%;
 
-  p {
-    line-height: 1.5rem;
-  } 
-
   h2, p {
     margin: 0 auto;
     width: 90%;
   }
+
+  h2 {
+    margin-bottom: 2rem;
+  }
+  
+  p {
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+  } 
 
   a {
     margin-top: 50rem;

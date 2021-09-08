@@ -33,6 +33,7 @@ const Portada = ({img, color, volver}) => {
 // ESTILOS
 const StyPortada = styled.div`
   position: relative;
+  
   img {
     width: 100%;
     height: 50vh;

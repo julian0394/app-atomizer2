@@ -1,7 +1,8 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
 // Componentes
 import Portada from '../components/Portada';
+import Contacto from '../components/Contacto';
+import Footer from '../components/Footer';
 // Imagenes
 import imgPortadaAgua from '../img/portadas/portadaAgua.jpg';
 
@@ -9,15 +10,11 @@ const AltaPresion = () => {
 
   const colorAgua = '#345AD5';
 
-  const history = useHistory();
-  const manejoCambioRuta = (ruta)  => {
-    history.push(ruta);
-  }
-
   return (
     <div className="cuerpo">
       <Portada img={imgPortadaAgua} color={colorAgua} volver={true} />
-      <button onClick={ () => manejoCambioRuta('/') }>VOLVER</button>
+      <Contacto color={colorAgua} />
+      <Footer linkActivado="altaPresion" />
     </div>
   );
 }

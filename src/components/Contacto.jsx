@@ -13,7 +13,7 @@ const Contacto = (props) => {
   return (  
     <StyContacto color={colorTexto}>
       <h2>Estemos en contacto</h2>
-      <p>Intentaremos responder lo antes posible. Whatsapp es el método más ágil y seguro. Al momento de contactarnos siempre ayuda ingresar toda la información que creas necesaria como los rubros y especificaciones técnicas que te interesan y tus medios de contacto. Estamos acá para ayudarte, tu consulta nunca nos molestaría.</p>
+      <p className="descripcion">Intentaremos responder lo antes posible. Whatsapp es el método más ágil y simple. Al momento de contactarnos siempre es de ayuda que nos envíes toda la información que creas necesaria como los rubros y especificaciones técnicas que te interesan y tus medios de contacto. Estamos acá para ayudarte, tu consulta nunca nos molestaría.</p>
       <div className="items">
         <div className="item">
           <h3><FontAwesomeIcon icon={faWhatsapp} color={colorTexto} /> Whatsapp </h3>
@@ -35,9 +35,11 @@ const Contacto = (props) => {
 }
 
 const StyContacto = styled.div`
-  background-color: #e8e8ff;
-  height: 20rem;
+  background-color: #EEF0F2;
+  height: 21rem;
   width: 100%;
+  text-align: center;
+  padding-top: 3rem;
   
   .items {
     display: flex;
@@ -51,7 +53,22 @@ const StyContacto = styled.div`
 
   h3 {
     color: ${props => props.color};
-    font-size: 2rem;
+    /* font-size: 2rem; */
+    cursor: default;
+    user-select: none;
+  }
+
+  .descripcion {
+    width: 70%;
+    margin: 2rem auto;
+  }
+
+  .items {
+    padding-top: 1rem;
+
+    .item {
+      padding-bottom: 5rem;
+    }
   }
 `
  

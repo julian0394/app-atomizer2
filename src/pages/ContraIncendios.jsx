@@ -1,7 +1,8 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
 // Componentes
 import Portada from '../components/Portada';
+import Contacto from '../components/Contacto';
+import Footer from '../components/Footer';
 // Imagenes
 import imgPortadaFuego from '../img/portadas/portadaFuego.jpg';
 // Estilo
@@ -11,15 +12,11 @@ const ContraIncendios = () => {
 
   const colorFuego = '#F27272';
 
-  const history = useHistory();
-  const manejoCambioRuta = (ruta)  => {
-    history.push(ruta);
-  }
-
   return (  
     <div className="cuerpo">
       <Portada img={imgPortadaFuego} color={colorFuego} volver={true} />
-      <button onClick={ () => manejoCambioRuta('/') }>VOLVER</button>
+      <Contacto color={colorFuego} />
+      <Footer linkActivado="extincion" />
     </div>
   );
 }
