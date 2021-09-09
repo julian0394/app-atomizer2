@@ -19,24 +19,27 @@ const Seleccion = () => {
   const colorAgua = '#345AD5';
 
   return (  
-    <StyCajaSeleccion>
-      <div className="lado">
-        <img src={imgOpcionFuego} alt="imagen extincion" />
-        <div className="img-overlay overlay-blur">
-          <h2>Equipos para extinción</h2>
-          <p className="texto texto-izq">Económico, portable y ecológico. Perfecto para un pronto ataque y comenzar a enfriar rapidamente mientras se despliegan las lineas de mayor caudal. El complemento ideal para autobombas o para pequeñas unidades de agil desplazamiento.</p>
-          <StyBtn onClick={ () => manejoRuta('/Contra-Incendios') } borde={colorFuego}> Visitar </StyBtn>
+    <>
+      <h1>Qué especialización te interesa?</h1>
+      <StyCajaSeleccion>
+        <div className="lado">
+          <img src={imgOpcionFuego} alt="imagen extincion" />
+          <div className="img-overlay overlay-blur">
+            <h2>Equipos para extinción</h2>
+            <p className="texto texto-izq">Económico, portable y ecológico. Perfecto para un pronto ataque y comenzar a enfriar rapidamente mientras se despliegan las lineas de mayor caudal. El complemento ideal para autobombas o para pequeñas unidades de agil desplazamiento.</p>
+            <StyBtn onClick={ () => manejoRuta('/Contra-Incendios') } borde={colorFuego}> Visitar </StyBtn>
+          </div>
         </div>
-      </div>
-      <div className="lado">
-        <img src={imgOpcionAgua} alt="imagen de equipo" />
-        <div className="img-overlay">
-          <h2>Equipos de alta presión</h2>
-          <p className="texto texto-der">Superiores a 1000 Bar con piezas europeas. Garantizamos horas constantes de uso y el máximo rendimiento para los rubros más exigentes. Servicio de reparación y repuestos.</p>
-          <StyBtn onClick={ () => manejoRuta('/Alta-Presion') } borde={colorAgua}> Visitar </StyBtn>
+        <div className="lado">
+          <img src={imgOpcionAgua} alt="imagen de equipo" />
+          <div className="img-overlay">
+            <h2>Equipos de alta presión</h2>
+            <p className="texto texto-der">Superiores a 1000 Bar con piezas europeas. Garantizamos horas constantes de uso y el máximo rendimiento para los rubros más exigentes. Servicio de reparación y repuestos.</p>
+            <StyBtn onClick={ () => manejoRuta('/Alta-Presion') } borde={colorAgua}> Visitar </StyBtn>
+          </div>
         </div>
-      </div>
-    </StyCajaSeleccion>
+      </StyCajaSeleccion>
+    </>
   );
 }
 

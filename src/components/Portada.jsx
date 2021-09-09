@@ -16,7 +16,7 @@ const Portada = ({img, color, volver}) => {
   }
 
   return (  
-    <StyPortada className="portada">
+    <StyPortada className="no-selecionable">
       <img src={img} alt="Foto de portada con logo" />
       <div className="grupo-boton">
         <StyBtn onClick="/" borde={color}><FontAwesomeIcon icon={faChevronDown} /> CONOCE MÁS </StyBtn>
@@ -33,7 +33,7 @@ const Portada = ({img, color, volver}) => {
 // ESTILOS
 const StyPortada = styled.div`
   position: relative;
-  
+
   img {
     width: 100%;
     height: 50vh;
@@ -48,7 +48,7 @@ const StyPortada = styled.div`
     left: 25%;
     right: 25%;
   }
-  
+
   a, button {
     color: white;
     text-decoration: none;

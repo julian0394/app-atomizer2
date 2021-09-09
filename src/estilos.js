@@ -20,10 +20,30 @@ export const StyBtn = styled.a`
   &:hover {
     background-color: ${props => props.borde};
     transition: 0.5s ease;
-
-    user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
   } 
+`
+
+export const StyBtnSolido = styled.button`
+  padding: 1rem 2.5rem;
+  cursor: pointer;
+  background-color: ${props => props.color};
+  border: 1px solid ${props => props.color};
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+
+  span {
+    margin-left: 0.3rem;
+  }
+
+  &:hover {
+    background-color: ${props => props.colorHover};
+    border-color: ${props => props.colorHover};
+  }
+
+  &:active {
+    background-color: ${props => props.colorActivo};
+    border-color: ${props => props.colorActivo};
+  }
 `

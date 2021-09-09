@@ -6,7 +6,7 @@ import styled from 'styled-components';
 const InfoPerez = () => {
   return (  
     <StyledInfoPerez>
-      <img src={ingPerez} alt="Foto de Luis Perez" />
+      <img className="intocable" src={ingPerez} alt="Foto de Luis Perez" />
       <div className="descripcion-perez">
         <h2>ING. LUIS A. PÉREZ</h2>
         <p>Ingeniero en seguridad ambiental, Licenciado en higiene y seguridad en el trabajo, ex bombero voluntario de Gral. San Martín. Más de 10 años de experiencia en el diseño y desarrollo de equipos de alta presión y pionero de la extinción de fuegos con agua atomizada.</p>
@@ -21,14 +21,11 @@ const StyledInfoPerez = styled.div`
   display: flex;
   padding: 3rem 0;
   align-items: center;
-  /* justify-content: flex-end; */
   justify-content: center;
 
   img {
     height: 12rem;
     width: 12rem;
-    /* padding: 0;
-    margin: 0; */
     object-fit: cover;
     border-radius: 50%;
     margin-right: 2rem;
